@@ -1,1 +1,1 @@
-# node-boilerplate
+# node-package-boilerplate

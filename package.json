@@ -1,5 +1,5 @@
 {
-  "name": "@schyun9212/node-boilerplate",
+  "name": "@schyun9212/node-package-boilerplate",
   "version": "0.0.1",
   "type": "module",
   "engines": {
@@ -10,7 +10,7 @@
     "dist"
   ],
   "repository": {
-    "url": "https://github.com/schyun9212/node-boilerplate"
+    "url": "https://github.com/schyun9212/node-package-boilerplate"
   },
   "author": {
     "name": "Anonymous"

@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/schyun9212/node-monorepo-boilerplate"
+    "url": "https://github.com/schyun9212/node-package-boilerplate"
   },
   "files": [
     "dist"
