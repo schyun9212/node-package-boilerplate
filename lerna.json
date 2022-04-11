@@ -1,0 +1,14 @@
+{
+  "version": "independent",
+  "packages": ["packages/*"],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "allowBranch": ["main", "release"],
+      "npmClient": "npm",
+      "registry": "https://npm.pkg.github.com/"
+    }
+  }
+}

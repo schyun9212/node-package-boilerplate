@@ -1,0 +1,25 @@
+name: Hotfix
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [closed]
+
+jobs:
+  create-sync-pr:
+    if: ${{ contains(github.head_ref, 'hotfix/') }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Create Pull Request
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: ${{ github.head_ref }}
+          destination_branch: "develop"
+          pr_title: "Sync: hotfix to develop"
+          pr_label: "automated pr,hotfix,wip"
+          github_token: ${{ secrets.GITHUB_TOKEN }}

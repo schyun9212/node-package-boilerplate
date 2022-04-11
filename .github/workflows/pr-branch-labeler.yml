@@ -1,0 +1,17 @@
+name: PR Branch Labeler
+
+on:
+  pull_request:
+    types: [opened]
+  pull_request_review:
+    types: [submitted, dismissed]
+
+jobs:
+  label_prs:
+    if: github.event.review.state != 'approved'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Label PRs
+        uses: ffittschen/pr-branch-labeler@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}

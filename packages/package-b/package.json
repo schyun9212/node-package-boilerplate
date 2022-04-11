@@ -1,0 +1,23 @@
+{
+  "name": "@schyun9212/package-b",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/schyun9212/node-monorepo-boilerplate"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf dist && rollup -c",
+    "test": "jest",
+    "build:dev": "rollup -c -m"
+  },
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/types/index.d.ts",
+  "dependencies": {
+    "@schyun9212/package-utils": "^0.0.0"
+  }
+}

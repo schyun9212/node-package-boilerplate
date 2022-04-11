@@ -1,0 +1,11 @@
+wip:
+  head: ["*"]
+
+bugfix:
+  head: ["hotfix/*", "bugfix/*"]
+
+feature:
+  head: "feature/*"
+
+release:
+  head: ["develop"]
